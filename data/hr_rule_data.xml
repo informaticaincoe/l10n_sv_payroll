@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Regla Salarial: ISSS -->
+        <record id="hr_salary_rule_isss" model="hr.salary.rule">
+            <field name="name">ISSS</field>
+            <field name="sequence">10</field>
+            <field name="category_id" ref="hr_payroll.DEDUCTIONS"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">percentage</field>
+            <field name="amount_percentage">3.0</field>
+            <field name="amount_percentage_base">contract.wage</field>
+            <field name="appears_on_payslip">True</field>
+        </record>
+
+        <!-- Regla Salarial: AFP -->
+        <record id="hr_salary_rule_afp" model="hr.salary.rule">
+            <field name="name">AFP</field>
+            <field name="sequence">20</field>
+            <field name="category_id" ref="hr_payroll.DEDUCTIONS"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">percentage</field>
+            <field name="amount_percentage">7.25</field>
+            <field name="amount_percentage_base">contract.wage</field>
+            <field name="appears_on_payslip">True</field>
+        </record>
+
+        <!-- Regla Salarial: ISR -->
+        <record id="hr_salary_rule_isr" model="hr.salary.rule">
+            <field name="name">ISR</field>
+            <field name="sequence">30</field>
+            <field name="category_id" ref="hr_payroll.DEDUCTIONS"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">percentage</field>
+            <field name="amount_percentage">10.0</field>
+            <field name="amount_percentage_base">contract.wage</field>
+            <field name="appears_on_payslip">True</field>
+        </record>
+    </data>
+</odoo>

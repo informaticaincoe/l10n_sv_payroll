@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="hr_category_deductions_sv" model="hr.salary.rule.category">
+            <field name="name">Deducciones El Salvador</field>
+            <field name="code">DED_SV</field>
+        </record>
+    </data>
+</odoo>
